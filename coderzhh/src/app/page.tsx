@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { getVisitorCT, addVisitorCT } from "@/server/actions/VisitorCT";
-
+import { VisitorCT } from "@/app/(pages)/VisitorCT/page";
 export default async function Home() {
-  const visitor = await getVisitorCT();
-  console.log('visitor:', visitor);
   addVisitorCT();
 
   return (
     <div style={{ position: "relative", height: "100vh" }}>
+      <VisitorCT/>
       <div>
         Welcome to Next.js!
       </div>
