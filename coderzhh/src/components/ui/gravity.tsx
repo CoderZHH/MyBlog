@@ -271,7 +271,7 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
           },
         },
       })
-
+    
       // Add walls
       const walls = [
         // Floor
